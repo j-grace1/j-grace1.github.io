@@ -1,2 +1,2 @@
-# j-grace1.github.io
+# j-grace1-.github.io
 my first GitHub repository
