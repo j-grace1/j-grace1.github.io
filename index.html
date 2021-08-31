@@ -2,92 +2,139 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>myfirst webpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<img>
-<center>
-
-
-         i am the salt of the earth no more pain no more sorrow
-
-
-</center>
-
-
-<p>this is a paragraph-</p>
-<a>this a hyper link</a>
-
-<table border = "1",bordercolor = "brown", width = "700", height = "500">
-    <caption>my first table in html</caption>
-    <tr bgcolor="orange">
-        <th>colunm1</th>
-        <th>column2</th>
-        <th>column3</th>
-        <th>column4</th>
-        <th>column5</th>
-    </tr>
-
-    <tr bgcolor="gray">
-        <td>content1</td>
-        <td>content2</td>
-        <td>content3</td>
-        <td>content4</td>
-        <td>content5</td>
-    </tr>
-<span my_id='m_span'> Span with attribute 'my_id' with value 'm_span' </span>
-<br>
-</table>
-
-
-<p>This is <b>bold</b> text</p>
-<p>This is <strike>striked</strike> text</p>
-<p>This is <sub>subscript</sub> text</p>
-
-<ol> List
-    <li>item1</li>
-    <li>item2</li>
-    <li>item3</li>
-
-</ol>
-<ul type="square">
-    <li>item1</li>
-    <li>item2</li>
-</ul>
-
-<dl> LIST
-    <dd>item1</dd>
-    <dd>item2</dd>
-</dl>
-
-<p>
-    <a href="www.google.com"> more</a>
-</p>
-<p><a href="www.facebook.com">facebook login</a> </p>
-<p><a href="www.twitter.com">twitter login</a> </p>
-
-
-
-<form>
-    <input type="text" name="USER NAME" value=" j grace" size="45" maxlength="5">
-    <input type="password" name="USER PASSWORD" value="1ef@rg**" maxlength="8">
-    <input type="radio" name="DJIBLIL">DJIBLIL<br>
-    <input type="radio" name="VORFA"><br>
-    <input type="checkbox" name="CHLOE"><br>
-    <input type="button" >
-
-
-</form>
-
-<select>
-    <option name="name " value="good"></option>
-</select>
-<img src="IMG_20201221_160914~2.jpg" alt ="keneth"  width = "100%"/>
-<input type="button" onclick="alert('Hello')" name="b_alert" value="Say Hello"/><br>
-<input type="submit" name="b_submit" value="Go to jQuery"/>
-<input type="reset" name="b_reset" value="Reset"/><br>
-<input type="hidden" name="h_data" value="html_tutorial">
+<body>
+   
+    <!--Hero Section-->
+    <section id ="hero">
+        <div class="nav-bar">
+            <label for="toggle-1" class="toggle-menu"><ul class="toggle"><li></li> <li></li> <li></li></ul></label>
+<input type="checkbox" id="toggle-1">   
+<ul class="logo" style="list-style: none; position: fixed; padding-left: 85%; "  >
+    <li style="float:left"><img src="" alt=""></li>
+   
+</ul>  
+            <ul style="list-style: none;position: fixed; "   class="list">
+               
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a class="active" href="portfolio.html">Portfolio</a></li>
+                <li><a class="active" href="about.html#services">Services</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a class="active" href="#hero">Home</a></li>
+            </ul>
+        </div>   
+        <div class="hero container">
+            <h1>Welcome, <span></span></h1>
+            <h1>I Am Called <span></span></h1>
+            <h1>Joshua <span></span></h1>
+            <div class="textslider">
+                <div class="content">
+                    <div class="slider-wrapper">
+                      <div class="slider"> 
+                          <div class="slider-text1">i am a Graphic designer</div>
+                          <div class="slider-text2">i am an App and Web developer</div>
+                          <div class="slider-text3">i am a Pencil artist </div>
+                      </div>
+                    </div>       
+                  </div>
+              </div>
+            <a href="portfolio.html" type = "button" class="cta">Portfolio</a>
+            <a href="#" type = "button" class="cta">Hire Me</a>
+        </div>
+    </section>
+    <!--End Hero Section-->
+    <!-- about and service section-->
+    <section id="about">
+        <div class="about container">
+           
+            <div id="services">
+                <div class="service container">
+                    <div class="service-top">
+                        <h1 class="section-title">SERV<span>I</span>CES</h1>
+                        <p>Brief intoduction to services</p>
+                    </div>
+                    <div class="service-bottom">
+                        <div class="service-item">
+                           <div class=" service icon"><img src ="#" /></div> 
+                           <h2>Web Development</h2>
+                           <p> little expanciation on the service</p>
+                        </div>
+                        <div class="service-item">
+                            <div class=" service icon"><img src ="#" /></div> 
+                            <h2>Application Development</h2>
+                            <p> little expanciation on the service</p>
+                         </div>
+                         <div class="service-item">
+                            <div class=" service icon"><img src ="#" /></div> 
+                            <h2>Graphic Designing</h2>
+                            <p> little expanciation on the service</p>
+                         </div>
+                         <div class="service-item">
+                            <div class=" service icon"><img src ="#" /></div> 
+                            <h2>Pencil Portraits</h2>
+                            <p> little expanciation on the service</p>
+                         </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        
+    </section>
+    <!-- end about section-->
+    
+    <!--End Services section-->
+    
+    <!--Projects section-->
+    <section id="projects">
+        <div class="projects container">
+            <div class="projects-header">
+                <h1 class="section-title"> port<span>folio</span></h1>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">View My recent Projects</button>
+                <div class="dropdown-content">
+                    <a href="portfolio.html#project-1">Project 1</a>
+                  <a href="portfolio.html#project-2">Project 2</a>
+                  <a href="portfolio.html#project-3">Project 3</a>
+                  <a href="portfolio.html#project-4">Project 4</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Projects section-->
+    <!--contact section-->
+   
+    <!-- end contact section-->
+    <!-- footer-->
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand"><h1> <span>N</span>chinde <span>J</span>oshua</h1></div>
+            <h2>your advertisement slogan</h2>
+            <h2>Contact Me At</h2>
+            <div class="social-icon">
+                <div class="social-items">
+                    <div class="social-item">
+                        <a href="#"><img src="/img/whatsapp icon.jfif" alt="#"></a>
+                    </div>
+                    <div class="social-item">
+                        <a href="#"><img src="/img/Facebook-icon-logo.png" alt="#"></a>
+                    </div>
+                    <div class="social-item">
+                        <a href="#"><img src="/img/twitter icon.jfif" alt="#"></a>
+                    </div>
+                    <div class="social-item">
+                        <a href="#"><img src="/img/instagram.jfif" alt="#"></a>
+                    </div>
+                </div>
+            </div>
+            <h2>+237 674 063 317 / +237 657 883 032</h2>
+            <h2>nchindejoshoua@gmail.com</h2>
+            <p>&copy; Copyright  2021 Joshua. All rights reserved</p>
+        </div>
+    </section>
+    <!-- end footer-->
 </body>
-<br><br/>
-
-<hr><hr/>
-</html>  bp
+</html>

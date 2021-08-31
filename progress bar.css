@@ -1,0 +1,73 @@
+.progress-container{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.progress{
+    min-height: 100vh;
+    padding: 100px 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.progress-bar{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: -3px -3px 7px#ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
+    overflow: hidden;
+    margin: 50px;
+}
+.progress-bar::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    border-radius: 50%;
+    width: 80%;
+    box-shadow: inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
+}
+.progress-bar svg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.progress-bar svg circle {
+    position: absolute;
+    transform: scale(.939);
+    transform-origin: center;
+    fill: none;
+    stroke:  rgba(220, 20, 60, 0.308);
+    stroke-width: 30px;
+    stroke-dasharray: 629px;
+    
+}
+.progress-bar:nth-child(1) svg circle{
+    animation: bar_1 2s infinite ease forwards;
+    animation-delay: 3s;
+}
+.progress-bar:nth-child(2) svg circle{
+    animation: bar_2 2s infinite ease forwards;
+    animation-delay: 5s;
+}
+.progress-bar:nth-child(3) svg circle{
+    animation: bar_3 2s infinite ease forwards;
+    animation-delay: 7s;
+}
+.progress-bar h1 {
+    position: absolute;
+    font-size: 20px;
+    font-family: "Montserrat";
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
