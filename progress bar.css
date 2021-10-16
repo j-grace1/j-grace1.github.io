@@ -1,17 +1,23 @@
 .progress-container{
     padding: 0;
-    margin: 0;
+   
     box-sizing: border-box;
 }
+.progress-container h2{
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    width: 100vw;
+}
 .progress{
-    min-height: 100vh;
-    padding: 100px 0;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding: 40px 0px;
 }
 .progress-bar{
     display: inline-block;
@@ -21,7 +27,7 @@
     position: relative;
     box-shadow: -3px -3px 7px#ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
     overflow: hidden;
-    margin: 50px;
+    margin: 10px 20px;
 }
 .progress-bar::after{
     content: '';
@@ -44,22 +50,29 @@
     transform: scale(.939);
     transform-origin: center;
     fill: none;
-    stroke:  rgba(220, 20, 60, 0.308);
+    stroke:  #143960;
     stroke-width: 30px;
     stroke-dasharray: 629px;
-    
 }
 .progress-bar:nth-child(1) svg circle{
     animation: bar_1 2s infinite ease forwards;
-    animation-delay: 3s;
+    animation-delay: 1s;
 }
 .progress-bar:nth-child(2) svg circle{
     animation: bar_2 2s infinite ease forwards;
-    animation-delay: 5s;
+    animation-delay: 1s;
 }
 .progress-bar:nth-child(3) svg circle{
     animation: bar_3 2s infinite ease forwards;
-    animation-delay: 7s;
+    animation-delay: 1s;
+}
+.progress-bar:nth-child(4) svg circle{
+    animation: bar_3 2s infinite ease forwards;
+    animation-delay: 1s;
+}
+.progress-bar:nth-child(5) svg circle{
+    animation: bar_3 2s infinite ease forwards;
+    animation-delay: 1s;
 }
 .progress-bar h1 {
     position: absolute;
@@ -69,5 +82,5 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+  
 }

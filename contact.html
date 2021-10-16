@@ -4,40 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contact1.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
-<body style="background-image: url(https://source.unsplash.com/650x550)">
-    
-    <div class="container">
-        <section>
+<body>
+       <div id="contpage">
+        <div class="nav-bar">
             <div class="nav-bar">
-                <label for="toggle-1" class="toggle-menu"><ul class="toggle"><li></li> <li></li> <li></li></ul></label>
-    <input type="checkbox" id="toggle-1">   
-    <ul class="logo" style="list-style: none; position: fixed; padding-left: 85%; "  >
-        <li style="float:left"><img src="" alt=""></li>
-        
-    </ul>  
-                <ul style="list-style: none;position: fixed; "   class="list">
-                   
-                    <li><a class="active" href="contact.html">Contact</a></li>
-                    <li><a class="active" href="portfolio.html">Portfolio</a></li>
-                    <li><a class="active" href="about.html#services">Services</a></li>
-                    <li><a class="active" href="about.html">About</a></li>
-                    <li><a class="active" href="index.html">Home</a></li>
-                </ul>
-            </div>
-        </section>
-        <header>
+                <header class="nav-menu"  style="padding-bottom: 10px;">
+                    <div class="Logos"  style="padding-top: 8px;">
+                        <img src="/img/andras-vas-Bd7gNnWJBkU-unsplash.jpg" alt="">
+                      <h1>J Grace </h1>
+                    
+                    </div>
+                    <div class="hamborger">
+                      <div class="dropdown">
+                        <button class="dropbtn"> <img style="height: 100px; width: 100px; margin-top: -20px; float: right;" src="/img/white-menu-icon-12 (1).jpg" alt=""></button>
+                        <div class="dropdown-content">
+                          <li><a href="index.html"> Home</a></li>
+                          <li><a href="about.html">About Me</a></li>
+                          <li><a href="about.html#services">Services</a></li>
+                          <li><a href="portfolio.html">Portfolio</a></li>
+                          <li><a href="#contact">Contact</a></li>
+                        </div>
+                      </div>   
+                       </div>
+                    <nav class="nav-area">
+                      <ul style="padding-top:18px ;">
+                        <li><a href="index.html"> Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="about.html#services">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                      </ul>
+                    </nav>
+                  </header>
+            </div>   
+        </div>
+    <section>
+        <div id="contact">
             <h1>Contact Me</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam totam iure vitae nesciunt quaerat sed, et ullam placeat ut? Impedit dolorem nostrum itaque molestias nemo delectus animi fuga illum magnam earum pariatur reiciendis, explicabo id velit facilis, necessitatibus cum! Magnam.</p>
-        </header>
-        <div class="content">
-            <div class="content-form">
-                <section>
+        </div>
+        <div class="contpos">
+            <div class="content1">
+                   <div class="contact-tool">
                     <div class="icon"><img src="/img/33821612eea9551e087598d40c1f03eb.png" alt="#"></div>
                     <h2>address</h2>
                     <p>
@@ -45,52 +56,61 @@
                         Lorem, ipsum dolor. <br>
                         lorem
                     </p>
-                </section>
-                <section>
+                   </div>
+                   <div class="contact-tool">
                     <div class="icon"><img src="/img/phonne.jfif" alt="#"></div>
                     <h2>Phone</h2>
                     <p>+237 674 063 317 / +237 657 883 032</p>
-                </section>
-
-                <section>
+                   </div>
+                   <div class="contact-tool">
                     <div class="icon"><img src="/img/email.jfif" alt="#"></div>
                     <h2>E-mail</h2>
                     <p>nchindejoshoua@gmail.com</p>
-                </section>
+                   </div>
+            </div>
+            <div class="contacts-form">
+                <div class="form">
+                    <div class="right">
+                      <div class="contact-form">
+                        <span>Full Name</span>
+                          <input type="text" required>
+                      </div>
+          
+                      <div class="contact-form">
+                        <span>E-mail Id</span>
+                          <input type="E-mail" required>
+                      </div>
+                      <div class="contact-form">
+                        <span> Type your Message....</span>
+                          <textarea name="text">
+                            
+                          </textarea>
+                      </div>
+          
+                      <div class="contact-form">
+                          <input class="submit" type="submit" name="submit">
+                      </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
         </div>
-
-      <form>
-        <div class="form">
-            <div class="right">
-              <div class="contact-form">
-                  <input type="text" required>
-                  <span>Full Name</span>
-              </div>
-  
-              <div class="contact-form">
-                  <input type="E-mail" required>
-                  <span>E-mail Id</span>
-              </div>
-              <div class="contact-form">
-                  <textarea name="text">
-                    
-                  </textarea>
-                  <span> Type your Message....</span>
-              </div>
-  
-              <div class="contact-form">
-                  <input type="submit" name="submit">
-              </div>
-              </div>
-            </div>
-          </div>
-    </form>
+    </section>
     <section id="footer">
         <div class="footer container">
-            <div class="brand"><h1> <span>N</span>chinde <span>J</span>oshua</h1></div>
-            <h2>your advertisement slogan</h2>
+          <div class="positioning">
+            <div class="brand">
+                <div class="brand-1">
+                    <img style="height: 40px; width: 40px;" src="/img/andras-vas-Bd7gNnWJBkU-unsplash.jpg" alt="">
+                    <h1> <span>N</span>chinde <span>J</span>oshua</h1>
+                   </div>
+                <div>
+                <h2>your advertisement slogan</h2>
+                </div>
+            </div>
+          <div class="contactat">
             <h2>Contact Me At</h2>
+          </div>
             <div class="social-icon">
                 <div class="social-items">
                     <div class="social-item">
@@ -107,14 +127,14 @@
                     </div>
                 </div>
             </div>
+          <div class="cntact">
             <h2>+237 674 063 317 / +237 657 883 032</h2>
             <h2>nchindejoshoua@gmail.com</h2>
+          </div>
+          </div>
             <p>&copy; Copyright  2021 Joshua. All rights reserved</p>
         </div>
     </section>
-        <div class="empty">
-        </div>
-    </div> 
-
+       </div>
 </body>
 </html>
